@@ -28,7 +28,7 @@
   </div>
   <div class="row">
     <div class="col col-md-12">
-      <iframe name="iBody" src="{{route('home')}}" frameborder=no width="100%" height="900px">
+      <iframe name="iBody" src="{{route('production.index')}}" frameborder=no width="100%" height="900px">
       </iframe>
     </div>
   </div>

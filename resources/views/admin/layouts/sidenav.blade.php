@@ -28,7 +28,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+        <li class="active"><a href="{{ route('home') }}"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
       
      <li class="treeview">
           <a href="#">
@@ -37,7 +37,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a class="quick-link" href="{{ route('worker.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i>Add new Worker</a></li>
-            <li><a class="quick-link" href="{{ route('workitem.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i>Add new Product</a></li>
+            <li><a class="quick-link" href="{{ route('product.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i>Add new Product</a></li>
             <li><a class="quick-link" href="{{ route('production.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i> Production entry</a></li>
           
           </ul>              
