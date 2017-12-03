@@ -437,7 +437,10 @@ Production list
       </div>
         <a href="#" onclick="printDiv('printArea')" class="btn btn-md btn-primary">Print</a>
           
-           <script type="text/javascript">
+        
+
+    @endif
+       <script type="text/javascript">
              function printDiv(divName) {
      var printContents = document.getElementById(divName).innerHTML;
      var originalContents = document.body.innerHTML;
@@ -502,11 +505,10 @@ Production list
 
 
            </script>
-
-    @endif
       	 </div>
       	       </div>
        </div>
 
      </div>
+
 @endsection
