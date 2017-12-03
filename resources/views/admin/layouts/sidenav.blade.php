@@ -29,17 +29,18 @@
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
+      
+     <li class="treeview">
+          <a href="#">
+            <i class="fa fa-money"></i> <span>Productions</span>
+            <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
+            <li><a class="quick-link" href="{{ route('worker.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i>Add new Worker</a></li>
+            <li><a class="quick-link" href="{{ route('workitem.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i>Add new Product</a></li>
+            <li><a class="quick-link" href="{{ route('production.index') }}" target="iBody"><i class="fa fa-circle-o text-green"></i> Production entry</a></li>
+          
+          </ul>              
         </li>
       </ul>
       <!-- /.sidebar-menu -->

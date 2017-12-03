@@ -63,7 +63,7 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="{{ route('home') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>U</b>T</span>
       <!-- logo for regular state and mobile devices -->
@@ -99,7 +99,7 @@ desired effect
 
                 <p>
                   {{auth()->user()->name}} - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  <small>Member since {{ auth()->user()->created_at->toFormattedDateString() }}</small>
                 </p>
               </li>
               <!-- Menu Body -->
