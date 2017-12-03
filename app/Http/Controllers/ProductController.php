@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Worker;
+use App\Product;
 use Illuminate\Http\Request;
 
-class WorkerController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,11 @@ class WorkerController extends Controller
      */
     public function index()
     {
-        $workers=Worker::all();
-        return view('admin.production.worker.workerList',compact('workers'));
+       $products=Product::all();
+       return view('admin.production.product.productList',compact('products'));
     }
 
-
+ 
 
     /**
      * Store a newly created resource in storage.
@@ -32,12 +32,11 @@ class WorkerController extends Controller
          'name'=>'required',
        ]);
     $input=$request->all();
-       Worker::create($input);
-       return back()->with('status','Worker created succesfully');
-   }  
+       Product::create($input);
+       return back()->with('status','Work item created succesfully');
+    }
 
   
-
 
     /**
      * Update the specified resource in storage.
@@ -48,10 +47,10 @@ class WorkerController extends Controller
      */
     public function update(Request $request, $id)
     {
-       $worker=Worker::find($id);
+        $item=Product::find($id);
        $input=$request->all();
-       $worker->update($input);
-       return back()->with(['status'=>'Worker Updated']);
+       $item->update($input);
+       return back()->with(['status'=>'Product Updated']);
     }
 
     /**

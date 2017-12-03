@@ -22,9 +22,9 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'], function() {
 
     // worker
 	Route::resource('/worker','WorkerController',['except'=>['create','edit','show']]);
-	
+
 	// product for production
-	Route::resource('/workitem','WorkItemController',['except'=>['create','edit','show']]);
+	Route::resource('/workitem','ProductController',['except'=>['create','edit','show']]);
 
 	// New production entry
 	Route::resource('/production','ProductionController',['except'=>['create','edit','show']]);
