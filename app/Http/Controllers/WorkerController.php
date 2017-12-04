@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class WorkerController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the worker.
      *
      * @return \Illuminate\Http\Response
      */
@@ -21,7 +21,7 @@ class WorkerController extends Controller
 
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created worker in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -40,7 +40,7 @@ class WorkerController extends Controller
 
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified worker in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -55,7 +55,7 @@ class WorkerController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified worker from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

@@ -49,38 +49,38 @@ Production list
                     </div>
                   </form>
                 </div> 
-    <form action="{{route('production.index') }}" method="GET" role="form" style="z-index: 99;
-    overflow: hidden;" class="col-md-6">
-         
-       {{ csrf_field() }}
-         <div class="form-group col-md-5">
-           
-            <input  id='form_start_date' name='start_date' type="text"  placeholder="Start time: yy-mm-dd" class="form-control">
-         </div>
-         <div class="form-group col-md-5">
+          <form action="{{route('production.index') }}" method="GET" role="form" style="z-index: 99;
+          overflow: hidden;" class="col-md-6">
+               
+             {{ csrf_field() }}
+               <div class="form-group col-md-5">
+                 
+                  <input  id='form_start_date' name='start_date' type="text"  placeholder="Start time: yy-mm-dd" class="form-control">
+               </div>
+               <div class="form-group col-md-5">
+                
+                  <input  id='form_end_date' name='end_date' type="text" class="form-control" placeholder="End  time: yy-mm-dd" >
+               </div>
+             
+               
+               <div class="form-group col-md-1">
+               <button type="submit" class="btn btn-primary">Search</button>
+             </div>
+             </form>
+              <script>
+           $('#form_start_date').datepicker({
+
+          format: 'yyyy-mm-dd',
+       });
+           $('#form_end_date').datepicker({
+
+          format: 'yyyy-mm-dd',
+       });
           
-            <input  id='form_end_date' name='end_date' type="text" class="form-control" placeholder="End  time: yy-mm-dd" >
-         </div>
-       
-         
-         <div class="form-group col-md-1">
-         <button type="submit" class="btn btn-primary">Search</button>
-       </div>
-       </form>
-        <script>
-     $('#form_start_date').datepicker({
-
-    format: 'yyyy-mm-dd',
- });
-     $('#form_end_date').datepicker({
-
-    format: 'yyyy-mm-dd',
- });
-    
-   </script>
+         </script>
           </div>
          
- <div class="pull-right box-tools">
+   <div class="pull-right box-tools">
             
         <div class="box-tools">
           <div class="input-group input-group-sm" style="width: 250px;" >

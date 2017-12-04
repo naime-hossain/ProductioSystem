@@ -1,4 +1,4 @@
-
+{{-- master tempalate for iframe --}}
 
    @include('admin.layouts.header')
     <body>

@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class ProductionController extends Controller
 {
      /**
-     * Display a listing of the resource.
+     * Display a listing of the production.
      *
      * @return \Illuminate\Http\Response
      */
@@ -44,7 +44,7 @@ class ProductionController extends Controller
 
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created production in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -80,7 +80,7 @@ class ProductionController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified production.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -93,7 +93,7 @@ class ProductionController extends Controller
 
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified production in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -123,7 +123,7 @@ class ProductionController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified production from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

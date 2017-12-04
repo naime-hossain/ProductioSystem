@@ -9,34 +9,35 @@ Product list
   <div class="row">
     <div class="col-sm-12">
 
-@if(Session::has('status'))
-      <div class="alert alert-success fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        {{ Session::get('status') }}
-      </div>
+       @if(Session::has('status'))
+        <div class="alert alert-success fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          {{ Session::get('status') }}
+        </div>
 
-      @endif
+         @endif
 
       <div class="box box-widget" style="margin-bottom: 6px;">
         <div class="box-header with-border">
           <i class="fa fa-th"></i>
           <h3 class="box-title"> Product List</h3><br>
- <div class="pull-right box-tools">
+        <div class="pull-right box-tools">
             <form class="pull-right">
-        <div class="box-tools">
-          <div class="input-group input-group-sm" style="width: 250px;" >
-          {{--   <input type="text" name="q" class="form-control input-xs pull-right customer-search" title="Search By Code, Name, Mobile, Email, Company" placeholder="Search By Code, Name, Mobile" data-url="{{route('customerSearchAjax')}}" autocomplete="off"> --}}
-              
-            <div class="input-group-btn">
-              {{-- <button type="button" class="btn btn-warning"><i class="fa fa-search"></i></button> --}}
- 
-         
- 
-              <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus-square"></span> Add new  Product</button> 
+            <div class="box-tools">
+            <div class="input-group input-group-sm" style="width: 250px;" >
+            {{--   <input type="text" name="q" class="form-control input-xs pull-right customer-search" title="Search By Code, Name, Mobile, Email, Company" placeholder="Search By Code, Name, Mobile" data-url="{{route('customerSearchAjax')}}" autocomplete="off"> --}}
+                
+              <div class="input-group-btn">
+                {{-- <button type="button" class="btn btn-warning"><i class="fa fa-search"></i></button> --}}
+   
+           
+   
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus-square"></span> Add new  Product</button> 
+              </div>
             </div>
           </div>
-        </div>
-        </form>
+          </form>
+          {{-- end of form --}}
    
 
             <!-- Modal -->
@@ -87,6 +88,7 @@ Product list
                </div>
              </div>
            </div>
+           {{-- end of modal --}}
          </div>
        </div>
 
@@ -237,4 +239,9 @@ Product list
        </div>
 
      </div>
+     {{-- end of col-12 --}}
+   </div>
+   {{-- end of row --}}
+ </div>
+ {{-- end of content_wraper --}}
 @endsection

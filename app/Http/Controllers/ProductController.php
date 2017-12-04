@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the product.
      *
      * @return \Illuminate\Http\Response
      */
@@ -21,7 +21,7 @@ class ProductController extends Controller
  
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created product in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -39,7 +39,7 @@ class ProductController extends Controller
   
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified product in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -54,7 +54,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified product from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
