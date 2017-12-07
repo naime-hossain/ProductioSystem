@@ -162,7 +162,7 @@ Production list
                         <div class = "col-md-6">
                           <div class="form-group has-feedback{{ $errors->has('rate') ? ' has-error' : '' }}">
                             <label for="text">Rate(tk)</label>
-                            <input type = "number" class="form-control"   id="rate"  name="rate"  autocomplete="off"  required>
+                            <input type = "number" class="form-control"   id="rate"  name="rate"  autocomplete="off"  required step="0.01">
                       
                             @if( $errors->has('rate') )
                             <span class="help-block">{{ $errors->first('rate') }}</span>
@@ -377,7 +377,7 @@ Production list
                         <div class = "col-md-6">
                           <div class="form-group has-feedback{{ $errors->has('rate') ? ' has-error' : '' }}">
                             <label for="text">Rate(tk)</label>
-                            <input type = "number" class="form-control"   id="update_rate"  name="rate"  autocomplete="off"  required value="{{ $production->rate }}">
+                            <input type = "number" class="form-control"   id="update_rate"  name="rate"  autocomplete="off"  required value="{{ $production->rate }}" step="0.01">
                       
                             @if( $errors->has('rate') )
                             <span class="help-block">{{ $errors->first('rate') }}</span>
