@@ -93,6 +93,8 @@ class ProductionController extends Controller
            $paid=$request->paid;
         }else{
             $paid=0;
+            // return $paid;
+             $input['paid']=$paid;
         }
         // total amount to be paid 
         $total=$request->quantity*$request->rate;

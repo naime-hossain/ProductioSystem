@@ -22,7 +22,7 @@ class CreateProductionsTable extends Migration
             $table->integer('rate');
             $table->integer('quantity');
             $table->integer('total');
-            $table->integer('paid');
+            $table->integer('paid')->nullable();
             $table->integer('balance');
             $table->timestamps();
         });
